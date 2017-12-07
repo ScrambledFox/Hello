@@ -1,0 +1,31 @@
+{
+    "AS_Map_d73c11c0d5e14e988a405a24caacff2f": {
+        "id": "AS_Map_d73c11c0d5e14e988a405a24caacff2f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "location"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_onClick_b42fe64a14f74b68ae4a4126d75b4d89",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "testPin = {\n\tid : \"id1\", // id is mandatory for every pin\n\tlat : location[\"lat\"],\n\tlon : location[\"lon\"],\n\tname : \"New Pin\",\n\timage : \"defaultImage.png\",\n\tfocusImage:\"focusImage.png\",  //focus image will be shown while map pin selected\n\tdesc: \"Empty Description\",\n\tshowCallout : true,\n\tmeta: {\n\t\tcolor: \"none\",\n\t\tlabel: \"\"\n\t}\n};\n\nthis.view.LatLonTestLabel.text = location;\n\nthis.view.MainMap.addPin(testPin);",
+            "callbackType": null
+        }, {
+            "id": "NAVIGATE_TO_FORM__onClick_fd597342400443e994f816411b6fd4f8",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "PinEditForm",
+            "formKUID": "i32ca33bf9764936bf9faa188a7eae0c",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "package": ""
+        }]
+    }
+}

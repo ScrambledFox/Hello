@@ -1,0 +1,24 @@
+{
+    "AS_Map_af98dfc8a2ab42e38dcb5cf92ed2281e": {
+        "id": "AS_Map_af98dfc8a2ab42e38dcb5cf92ed2281e",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "MainForm",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b47cb86f1efd4a0aab109b802ed1a973"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__f8db696893834f9cb4ef4d87ae2a60af",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var positionoptions = {timeout: 15000}; // 15 secs \nvar geoLocation = kony.location.getCurrentPosition(successcallback, errorcallback, positionoptions);\n\nthis.view.CopyLatLonTestLabel0c778968c21fe49.text = kony.location.getCurrentPosition(successcallback, errorcallback, positionoptions).coords.longitude;",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

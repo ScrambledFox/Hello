@@ -1,0 +1,86 @@
+{
+    "AS_Image_d6282caeea304798890fe65795dad7ec": {
+        "id": "AS_Image_d6282caeea304798890fe65795dad7ec",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "MainForm",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b47cb86f1efd4a0aab109b802ed1a973"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "MOVE_ACTION____e8ccd59488aa4e329f4d1629c7fc4825",
+            "type": "MOVE_ACTION",
+            "itemType": "FORM",
+            "itemId": "MainForm",
+            "widgetId": "MainMapFlex",
+            "itemKUID": "b47cb86f1efd4a0aab109b802ed1a973",
+            "widgetKUID": "ba7fc80eefdf4ff58405534f20566a63",
+            "wType": "FlexContainer",
+            "animationObject": {
+                "left": "50%",
+                "anchorPoint": {},
+                "stepConfig": {
+                    "timingFunction": "kony.anim.EASE"
+                },
+                "rectified": true
+            },
+            "config": {
+                "delay": "0",
+                "iterationCount": 1,
+                "fillMode": "kony.anim.FILL_MODE_FORWARDS",
+                "duration": "250"
+            },
+            "start": "Immediately",
+            "parentAnimation": "MOVE_ACTION____c609f7caa0ec41ab930ad188d011c7e0",
+            "animationId": "MOVE_ACTION____e8ccd59488aa4e329f4d1629c7fc4825",
+            "displayAnimationId": "MOVE_ACTION____e8ccd59488aa4e329f4d1629c7fc4825",
+            "forkedPlatform": "all",
+            "parentId": null,
+            "callbackType": null,
+            "widgetPath": "this.view.MainMapFlex"
+        }, {
+            "id": "MOVE_ACTION____c609f7caa0ec41ab930ad188d011c7e0",
+            "type": "MOVE_ACTION",
+            "itemType": "FORM",
+            "itemId": "MainForm",
+            "widgetId": "MenuFlex",
+            "itemKUID": "b47cb86f1efd4a0aab109b802ed1a973",
+            "widgetKUID": "ed35c78513174db38dfc381227aeb98f",
+            "wType": "FlexContainer",
+            "animationObject": {
+                "left": "-50%",
+                "anchorPoint": {},
+                "stepConfig": {
+                    "timingFunction": "kony.anim.EASE"
+                },
+                "rectified": true
+            },
+            "config": {
+                "delay": "0",
+                "iterationCount": 1,
+                "fillMode": "kony.anim.FILL_MODE_FORWARDS",
+                "duration": "250"
+            },
+            "start": "Immediately",
+            "parentAnimation": "MOVE_ACTION____e8ccd59488aa4e329f4d1629c7fc4825",
+            "animationId": "MOVE_ACTION____c609f7caa0ec41ab930ad188d011c7e0",
+            "displayAnimationId": "MOVE_ACTION____c609f7caa0ec41ab930ad188d011c7e0",
+            "forkedPlatform": "all",
+            "parentId": null,
+            "callbackType": null,
+            "widgetPath": "this.view.MenuFlex"
+        }]
+    }
+}
