@@ -25,6 +25,14 @@ define({
         var ntf = new kony.mvc.Navigation("PinEditForm");
         ntf.navigate();
     },
+    AS_Map_af98dfc8a2ab42e38dcb5cf92ed2281e: function AS_Map_af98dfc8a2ab42e38dcb5cf92ed2281e(eventobject) {
+        var self = this;
+        var positionoptions = {
+            timeout: 15000
+        }; // 15 secs 
+        var geoLocation = kony.location.getCurrentPosition(successcallback, errorcallback, positionoptions);
+        this.view.CopyLatLonTestLabel0c778968c21fe49.text = kony.location.getCurrentPosition(successcallback, errorcallback, positionoptions).coords.longitude;
+    },
     AS_Image_d6282caeea304798890fe65795dad7ec: function AS_Image_d6282caeea304798890fe65795dad7ec(eventobject, x, y) {
         var self = this;
 
@@ -113,13 +121,5 @@ define({
     },
     AS_FlexContainer_jbbbee48cb0b4d38a511d058844c34f3: function AS_FlexContainer_jbbbee48cb0b4d38a511d058844c34f3(eventobject) {
         var self = this;
-    },
-    AS_Map_af98dfc8a2ab42e38dcb5cf92ed2281e: function AS_Map_af98dfc8a2ab42e38dcb5cf92ed2281e(eventobject) {
-        var self = this;
-        var positionoptions = {
-            timeout: 15000
-        }; // 15 secs 
-        var geoLocation = kony.location.getCurrentPosition(successcallback, errorcallback, positionoptions);
-        this.view.CopyLatLonTestLabel0c778968c21fe49.text = kony.location.getCurrentPosition(successcallback, errorcallback, positionoptions).coords.longitude;
     }
 });
