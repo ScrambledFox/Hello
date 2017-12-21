@@ -1,0 +1,21 @@
+{
+    "AS_Map_d7ce6d0f1d634995ad0c965eddbd1e44": {
+        "id": "AS_Map_d7ce6d0f1d634995ad0c965eddbd1e44",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "location"
+        }],
+        "contextObj": {
+            "name": "MainForm",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b47cb86f1efd4a0aab109b802ed1a973"
+        },
+        "language": "js",
+        "actions": []
+    }
+}

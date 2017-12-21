@@ -4,7 +4,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "100%"
+        "value": "91.84%"
     },
     "_left_": {
         "type": "string",
@@ -25,12 +25,13 @@
     ],
     "_top_": {
         "type": "string",
-        "value": "0%"
+        "value": "8.16%"
     },
     "_width_": {
         "type": "string",
         "value": "100%"
     },
+    "calloutTemplateId": null,
     "calloutwidth": 80,
     "canUpdateUI": true,
     "containerweight": 100,
@@ -49,13 +50,13 @@
     "mapsource": "non-native",
     "mapsrc": "non-native",
     "name": "kony.ui.Map",
-    "onclick": "AS_Map_d73c11c0d5e14e988a405a24caacff2f",
-    "onmaploaded": "AS_Map_af98dfc8a2ab42e38dcb5cf92ed2281e",
+    "onclick": "AS_Map_f741d57de330451ab2400b30ce4eedd3",
+    "onmaploaded": "AS_Map_j017e9ac1ee944168f1c0b4ee46008ab",
     "parent": "MainMapFlex",
     "pf": "MainForm",
     "provider": "google",
     "screenlevelwidget": false,
     "wType": "Map",
     "zindex": 1,
-    "zoomlevel": 4
+    "zoomlevel": 1
 }

@@ -23,7 +23,7 @@
     "_src_": "menu_button.png",
     "_top_": {
         "type": "string",
-        "value": "1%"
+        "value": "0.01%"
     },
     "_width_": {
         "type": "string",
@@ -32,7 +32,7 @@
     "canUpdateUI": true,
     "centerx": {
         "type": "string",
-        "value": "10%"
+        "value": "6.98%"
     },
     "containerweight": 100,
     "context": {

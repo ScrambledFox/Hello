@@ -2,36 +2,16 @@ define({
     /*
       This is an auto generated file and any modifications to it may result in corruption of the action sequence.
     */
-    AS_Map_d73c11c0d5e14e988a405a24caacff2f: function AS_Map_d73c11c0d5e14e988a405a24caacff2f(eventobject, location) {
+    AS_Map_j017e9ac1ee944168f1c0b4ee46008ab: function AS_Map_j017e9ac1ee944168f1c0b4ee46008ab(eventobject) {
         var self = this;
-        testPin = {
-            id: "id1",
-            // id is mandatory for every pin
-            lat: location["lat"],
-            lon: location["lon"],
-            name: "New Pin",
-            image: "defaultImage.png",
-            focusImage: "focusImage.png",
-            //focus image will be shown while map pin selected
-            desc: "Empty Description",
-            showCallout: true,
-            meta: {
-                color: "none",
-                label: ""
-            }
+        var locationData = {
+            lat: currentLatitude,
+            lon: currentLongitude,
+            name: "Current Location",
+            desc: "CurrentLocation"
         };
-        this.view.LatLonTestLabel.text = location;
-        this.view.MainMap.addPin(testPin);
-        var ntf = new kony.mvc.Navigation("PinEditForm");
-        ntf.navigate();
-    },
-    AS_Map_af98dfc8a2ab42e38dcb5cf92ed2281e: function AS_Map_af98dfc8a2ab42e38dcb5cf92ed2281e(eventobject) {
-        var self = this;
-        var positionoptions = {
-            timeout: 15000
-        }; // 15 secs 
-        var geoLocation = kony.location.getCurrentPosition(successcallback, errorcallback, positionoptions);
-        this.view.CopyLatLonTestLabel0c778968c21fe49.text = kony.location.getCurrentPosition(successcallback, errorcallback, positionoptions).coords.longitude;
+        this.view.MainMap.navigateToLocation(locationData, false, true);
+        this.view.MainMap.zoomLevel =
     },
     AS_Image_d6282caeea304798890fe65795dad7ec: function AS_Image_d6282caeea304798890fe65795dad7ec(eventobject, x, y) {
         var self = this;
@@ -72,6 +52,7 @@ define({
         }, {
             "animationEnd": MOVE_ACTION____c609f7caa0ec41ab930ad188d011c7e0_Callback
         });
+        alert("I'm not working correctly");
     },
     AS_Image_g6300fed64954207a54daec5cad41a67: function AS_Image_g6300fed64954207a54daec5cad41a67(eventobject, x, y) {
         var self = this;
@@ -121,5 +102,27 @@ define({
     },
     AS_FlexContainer_jbbbee48cb0b4d38a511d058844c34f3: function AS_FlexContainer_jbbbee48cb0b4d38a511d058844c34f3(eventobject) {
         var self = this;
+    },
+    AS_Map_f741d57de330451ab2400b30ce4eedd3: function AS_Map_f741d57de330451ab2400b30ce4eedd3(eventobject, location) {
+        var self = this;
+        testPin = {
+            id: "id1",
+            // id is mandatory for every pin
+            lat: location["lat"],
+            lon: location["lon"],
+            name: "New Pin",
+            image: "defaultImage.png",
+            focusImage: "focusImage.png",
+            //focus image will be shown while map pin selected
+            desc: "Empty Description",
+            showCallout: true,
+            meta: {
+                color: "none",
+                label: ""
+            }
+        };
+        this.view.MainMap.addPin(testPin);
+        var ntf = new kony.mvc.Navigation("PinEditForm");
+        ntf.navigate();
     }
 });
