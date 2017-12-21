@@ -18,16 +18,21 @@
         2,
         2
     ],
-    "_placeholder_": "Lorem ipsum this is a new discription. This is just a placeholder. Be free to come take a look!",
+    "_placeholder_": "An empty pin description...",
     "_skin_": "s6d609f1166b4e539bbcfc1c00a3bd7f",
-    "_text_": "Lorem ipsum this is a new discription. This is just a placeholder. Be free to come take a look!",
+    "_text_": "",
     "_top_": {
         "type": "string",
         "value": "35%"
     },
     "_width_": {
         "type": "string",
-        "value": "75%"
+        "value": "90%"
+    },
+    "android": {
+        "psp": {
+            "placeholderSkin": "s052cf628f0d43d291f72c34ec362602"
+        }
     },
     "autocapitalize": "sentences",
     "autocomplete": false,
@@ -42,7 +47,7 @@
     "containerheight": "",
     "containerheightmode": 1,
     "containerweight": 100,
-    "contentalignment": 1,
+    "contentalignment": 2,
     "id": "pinDescriptionText",
     "info": null,
     "isvisible": true,
@@ -56,6 +61,7 @@
     "paddinginpixel": false,
     "parent": "PinEditForm",
     "pf": "PinEditForm",
+    "placeholderskin": "s052cf628f0d43d291f72c34ec362602",
     "securetextentry": false,
     "showoprogressindicator": false,
     "showprogressindicator": false,

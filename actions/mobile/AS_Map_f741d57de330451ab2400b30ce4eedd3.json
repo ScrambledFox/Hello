@@ -19,7 +19,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__ba3b6dd626ba4c08a911e9122e058d63",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "testPin = {\n\tid : \"id1\", // id is mandatory for every pin\n\tlat : location[\"lat\"],\n\tlon : location[\"lon\"],\n\tname : \"New Pin\",\n\timage : \"defaultImage.png\",\n\tfocusImage:\"focusImage.png\",  //focus image will be shown while map pin selected\n\tdesc: \"Empty Description\",\n\tshowCallout : true,\n\tmeta: {\n\t\tcolor: \"none\",\n\t\tlabel: \"\"\n\t}\n};\n\nthis.view.MainMap.addPin(testPin);",
+            "codeSnippet": "pin = CreatePin(\"new pin\", location[\"lat\"], location[\"lon\"], \"New Pin\", \"New Discription\", \"location_pin_medium.png\", \"location_pin.png\");\n\nthis.view.MainMap.addPin(pin);",
             "parentId": null,
             "callbackType": null
         }, {

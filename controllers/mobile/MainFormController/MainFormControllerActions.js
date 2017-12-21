@@ -4,48 +4,18 @@ define({
     */
     AS_Map_f741d57de330451ab2400b30ce4eedd3: function AS_Map_f741d57de330451ab2400b30ce4eedd3(eventobject, location) {
         var self = this;
-        testPin = {
-            id: "id1",
-            // id is mandatory for every pin
-            lat: location["lat"],
-            lon: location["lon"],
-            name: "New Pin",
-            image: "defaultImage.png",
-            focusImage: "focusImage.png",
-            //focus image will be shown while map pin selected
-            desc: "Empty Description",
-            showCallout: true,
-            meta: {
-                color: "none",
-                label: ""
-            }
-        };
-        this.view.MainMap.addPin(testPin);
+        pin = CreatePin("new pin", location["lat"], location["lon"], "New Pin", "New Discription", "location_pin_medium.png", "location_pin.png");
+        this.view.MainMap.addPin(pin);
         var ntf = new kony.mvc.Navigation("PinEditForm");
         ntf.navigate();
     },
     AS_Map_j017e9ac1ee944168f1c0b4ee46008ab: function AS_Map_j017e9ac1ee944168f1c0b4ee46008ab(eventobject) {
         var self = this;
-        if (locationData != null) {
+        if (currentLocationData != null) {
             this.view.MainMap.zoomLevel = 15;
-            this.view.MainMap.navigateToLocation(locationData, false, false);
-            currentLocationPin = {
-                id: "currentPositionPin",
-                // id is mandatory for every pin
-                lat: locationData["lat"],
-                lon: locationData["lon"],
-                name: "Current Position",
-                image: "location_pin.png",
-                focusImage: "location_pin.png",
-                //focus image will be shown while map pin selected
-                desc: "You are here!",
-                showCallout: false,
-                meta: {
-                    color: "none",
-                    label: ""
-                }
-            };
-            this.view.MainMap.addPin(currentLocationPin);
+            this.view.MainMap.navigateToLocation(currentLocationData, false, false);
+            this.view.MainMap.removePin(UpdatedCurrentLocationPin());
+            this.view.MainMap.addPin(UpdatedCurrentLocationPin());
         }
     },
     AS_Image_d6282caeea304798890fe65795dad7ec: function AS_Image_d6282caeea304798890fe65795dad7ec(eventobject, x, y) {
@@ -136,5 +106,26 @@ define({
     },
     AS_FlexContainer_jbbbee48cb0b4d38a511d058844c34f3: function AS_FlexContainer_jbbbee48cb0b4d38a511d058844c34f3(eventobject) {
         var self = this;
+    },
+    AS_Image_ce3efd899d214a1788e56c6e75955bd1: function AS_Image_ce3efd899d214a1788e56c6e75955bd1(eventobject, x, y) {
+        var self = this;
+        this.view.MainMap.navigateToLocation(currentLocationData, false, false);
+        if (GetGPSLockState()) {
+            SetGPSLockState(false); // Stop tracking the current location
+            this.view.GPSCenterButton.src = "/gps_center.png";
+        } else {
+            SetGPSLockState(true); // Restart tracking the current location
+            this.view.GPSCenterButton.src = "/gps_center_blue.png";
+        }
+    },
+    AS_Map_i4251780d7f34abe99fd86bc5702eb71: function AS_Map_i4251780d7f34abe99fd86bc5702eb71(eventobject, location) {
+        var self = this;
+        SetGPSLockState(false);
+        this.view.GPSCenterButton.src = "/arrow_left.png";
+        alert("helloww");
+    },
+    AS_Map_ecd2305ff7a44e0f8077385b0b312f0f: function AS_Map_ecd2305ff7a44e0f8077385b0b312f0f(eventobject, x, y) {
+        var self = this;
+        alert("test");
     }
 });

@@ -30,6 +30,12 @@
             "callbackType": null,
             "enableMappingEditor": true,
             "package": ""
+        }, {
+            "id": "ADD_SNIPPET__e42b124ec0d04d568c90cf6e6201ffd9",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": null,
+            "parentId": null,
+            "callbackType": null
         }]
     }
 }

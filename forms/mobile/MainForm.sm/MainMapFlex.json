@@ -36,7 +36,8 @@
     "canUpdateUI": true,
     "children": [
         "MainMap",
-        "menuButton"
+        "menuButton",
+        "GPSCenterButton"
     ],
     "clipbounds": false,
     "containerweight": 100,

@@ -1,0 +1,30 @@
+{
+    "AS_Map_bee616993ded40ddb65c7664733440b3": {
+        "id": "AS_Map_bee616993ded40ddb65c7664733440b3",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "MainForm",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b47cb86f1efd4a0aab109b802ed1a973"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__j2fcda408948469db9d63a94fa6c8c7d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "this.view.GPSCenterButton.src = \"/gps_center.png\";\nSetGPSLockState(false);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}
