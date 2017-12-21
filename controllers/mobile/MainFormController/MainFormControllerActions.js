@@ -4,14 +4,27 @@ define({
     */
     AS_Map_j017e9ac1ee944168f1c0b4ee46008ab: function AS_Map_j017e9ac1ee944168f1c0b4ee46008ab(eventobject) {
         var self = this;
-        var locationData = {
-            lat: currentLatitude,
-            lon: currentLongitude,
-            name: "Current Location",
-            desc: "CurrentLocation"
-        };
-        this.view.MainMap.navigateToLocation(locationData, false, true);
-        this.view.MainMap.zoomLevel =
+        if (locationData != null) {
+            this.view.MainMap.zoomLevel = 15;
+            this.view.MainMap.navigateToLocation(locationData, false, false);
+            currentLocationPin = {
+                id: "currentPositionPin",
+                // id is mandatory for every pin
+                lat: locationData["lat"],
+                lon: locationData["lon"],
+                name: "Current Position",
+                image: "arrow_left.png",
+                focusImage: "arrow_left.png",
+                //focus image will be shown while map pin selected
+                desc: "You are here!",
+                showCallout: false,
+                meta: {
+                    color: "none",
+                    label: ""
+                }
+            };
+            this.view.MainMap.addPin(currentLocationPin);
+        }
     },
     AS_Image_d6282caeea304798890fe65795dad7ec: function AS_Image_d6282caeea304798890fe65795dad7ec(eventobject, x, y) {
         var self = this;
@@ -52,7 +65,6 @@ define({
         }, {
             "animationEnd": MOVE_ACTION____c609f7caa0ec41ab930ad188d011c7e0_Callback
         });
-        alert("I'm not working correctly");
     },
     AS_Image_g6300fed64954207a54daec5cad41a67: function AS_Image_g6300fed64954207a54daec5cad41a67(eventobject, x, y) {
         var self = this;

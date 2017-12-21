@@ -1,5 +1,6 @@
 var currentLatitude = 0;
 var currentLongitude = 0;
+var locationData = {lat:currentLatitude,lon:currentLongitude,name:"Current Location",desc:"CurrentLocation"};
 
 function successcallback1(position) {
 	var geoPosition = "Latitude: " + position.coords.latitude;
@@ -10,10 +11,10 @@ function successcallback1(position) {
 	geoPosition = geoPosition + " Heading: " + position.coords.heading;
 	geoPosition = geoPosition + " Speeding: " + position.coords.speeding;
 	geoPosition = geoPosition + " Timestamp: " + position.timestamp;
-  	alert(geoPosition);
   
   	currentLatitude = position.coords.latitude;
   	currentLongitude = position.coords.longitude;
+  	locationData = {lat:position.coords.latitude,lon:position.coords.longitude,name:"Current Location",desc:"CurrentLocation"};
 }
 
 function errorcallback1(positionerror) {
