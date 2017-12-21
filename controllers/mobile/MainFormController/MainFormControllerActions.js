@@ -2,6 +2,28 @@ define({
     /*
       This is an auto generated file and any modifications to it may result in corruption of the action sequence.
     */
+    AS_Map_f741d57de330451ab2400b30ce4eedd3: function AS_Map_f741d57de330451ab2400b30ce4eedd3(eventobject, location) {
+        var self = this;
+        testPin = {
+            id: "id1",
+            // id is mandatory for every pin
+            lat: location["lat"],
+            lon: location["lon"],
+            name: "New Pin",
+            image: "defaultImage.png",
+            focusImage: "focusImage.png",
+            //focus image will be shown while map pin selected
+            desc: "Empty Description",
+            showCallout: true,
+            meta: {
+                color: "none",
+                label: ""
+            }
+        };
+        this.view.MainMap.addPin(testPin);
+        var ntf = new kony.mvc.Navigation("PinEditForm");
+        ntf.navigate();
+    },
     AS_Map_j017e9ac1ee944168f1c0b4ee46008ab: function AS_Map_j017e9ac1ee944168f1c0b4ee46008ab(eventobject) {
         var self = this;
         if (locationData != null) {
@@ -13,8 +35,8 @@ define({
                 lat: locationData["lat"],
                 lon: locationData["lon"],
                 name: "Current Position",
-                image: "arrow_left.png",
-                focusImage: "arrow_left.png",
+                image: "location_pin.png",
+                focusImage: "location_pin.png",
                 //focus image will be shown while map pin selected
                 desc: "You are here!",
                 showCallout: false,
@@ -114,27 +136,5 @@ define({
     },
     AS_FlexContainer_jbbbee48cb0b4d38a511d058844c34f3: function AS_FlexContainer_jbbbee48cb0b4d38a511d058844c34f3(eventobject) {
         var self = this;
-    },
-    AS_Map_f741d57de330451ab2400b30ce4eedd3: function AS_Map_f741d57de330451ab2400b30ce4eedd3(eventobject, location) {
-        var self = this;
-        testPin = {
-            id: "id1",
-            // id is mandatory for every pin
-            lat: location["lat"],
-            lon: location["lon"],
-            name: "New Pin",
-            image: "defaultImage.png",
-            focusImage: "focusImage.png",
-            //focus image will be shown while map pin selected
-            desc: "Empty Description",
-            showCallout: true,
-            meta: {
-                color: "none",
-                label: ""
-            }
-        };
-        this.view.MainMap.addPin(testPin);
-        var ntf = new kony.mvc.Navigation("PinEditForm");
-        ntf.navigate();
     }
 });
