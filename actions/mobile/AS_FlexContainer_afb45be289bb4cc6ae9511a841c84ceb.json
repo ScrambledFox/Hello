@@ -1,13 +1,16 @@
 {
-    "AS_Map_i4251780d7f34abe99fd86bc5702eb71": {
-        "id": "AS_Map_i4251780d7f34abe99fd86bc5702eb71",
+    "AS_FlexContainer_afb45be289bb4cc6ae9511a841c84ceb": {
+        "id": "AS_FlexContainer_afb45be289bb4cc6ae9511a841c84ceb",
         "type": "ACTION_SEQUENCE",
         "params": [{
             "datatype": "collection",
             "name": "eventobject"
         }, {
             "datatype": "string",
-            "name": "location"
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
         }],
         "contextObj": {
             "name": "MainForm",
@@ -17,9 +20,9 @@
         },
         "language": "js",
         "actions": [{
-            "id": "ADD_SNIPPET__f495d55bdca048c297e8151ad27883e5",
+            "id": "ADD_SNIPPET__c073bce7b0d04cb0aeb01b2d76f7b397",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "SetGPSLockState(false);\nthis.view.GPSCenterButton.src = \"/arrow_left.png\";\n\nalert(\"helloww\");",
+            "codeSnippet": "SetGPSLockState(false);\nthis.view.GPSCenterButton.src = \"/arrow_left.png\";",
             "parentId": null,
             "callbackType": null
         }]

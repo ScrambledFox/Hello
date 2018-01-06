@@ -52,7 +52,7 @@
     "name": "kony.ui.Map",
     "onclick": "AS_Map_f741d57de330451ab2400b30ce4eedd3",
     "onmaploaded": "AS_Map_j017e9ac1ee944168f1c0b4ee46008ab",
-    "onselection": "AS_Map_i4251780d7f34abe99fd86bc5702eb71",
+    "ontouchend": "AS_Map_a243975b35a444e09d2c21c1d685152d",
     "parent": "MainMapFlex",
     "pf": "MainForm",
     "provider": "google",

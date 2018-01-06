@@ -58,6 +58,17 @@ define({
             "animationEnd": MOVE_ACTION____c609f7caa0ec41ab930ad188d011c7e0_Callback
         });
     },
+    AS_Image_ce3efd899d214a1788e56c6e75955bd1: function AS_Image_ce3efd899d214a1788e56c6e75955bd1(eventobject, x, y) {
+        var self = this;
+        this.view.MainMap.navigateToLocation(currentLocationData, false, false);
+        if (GetGPSLockState()) {
+            SetGPSLockState(false); // Stop tracking the current location
+            this.view.GPSCenterButton.src = "/gps_center.png";
+        } else {
+            SetGPSLockState(true); // Restart tracking the current location
+            this.view.GPSCenterButton.src = "/gps_center_blue.png";
+        }
+    },
     AS_Image_g6300fed64954207a54daec5cad41a67: function AS_Image_g6300fed64954207a54daec5cad41a67(eventobject, x, y) {
         var self = this;
 
@@ -107,25 +118,10 @@ define({
     AS_FlexContainer_jbbbee48cb0b4d38a511d058844c34f3: function AS_FlexContainer_jbbbee48cb0b4d38a511d058844c34f3(eventobject) {
         var self = this;
     },
-    AS_Image_ce3efd899d214a1788e56c6e75955bd1: function AS_Image_ce3efd899d214a1788e56c6e75955bd1(eventobject, x, y) {
-        var self = this;
-        this.view.MainMap.navigateToLocation(currentLocationData, false, false);
-        if (GetGPSLockState()) {
-            SetGPSLockState(false); // Stop tracking the current location
-            this.view.GPSCenterButton.src = "/gps_center.png";
-        } else {
-            SetGPSLockState(true); // Restart tracking the current location
-            this.view.GPSCenterButton.src = "/gps_center_blue.png";
-        }
-    },
-    AS_Map_i4251780d7f34abe99fd86bc5702eb71: function AS_Map_i4251780d7f34abe99fd86bc5702eb71(eventobject, location) {
+    AS_Map_a243975b35a444e09d2c21c1d685152d: function AS_Map_a243975b35a444e09d2c21c1d685152d(eventobject, x, y) {
         var self = this;
         SetGPSLockState(false);
         this.view.GPSCenterButton.src = "/arrow_left.png";
         alert("helloww");
-    },
-    AS_Map_ecd2305ff7a44e0f8077385b0b312f0f: function AS_Map_ecd2305ff7a44e0f8077385b0b312f0f(eventobject, x, y) {
-        var self = this;
-        alert("test");
     }
 });
