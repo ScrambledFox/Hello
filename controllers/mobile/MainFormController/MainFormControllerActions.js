@@ -18,6 +18,12 @@ define({
             this.view.MainMap.addPin(UpdatedCurrentLocationPin());
         }
     },
+    AS_Map_a243975b35a444e09d2c21c1d685152d: function AS_Map_a243975b35a444e09d2c21c1d685152d(eventobject, x, y) {
+        var self = this;
+        SetGPSLockState(false);
+        this.view.GPSCenterButton.src = "/arrow_left.png";
+        alert("helloww");
+    },
     AS_Image_d6282caeea304798890fe65795dad7ec: function AS_Image_d6282caeea304798890fe65795dad7ec(eventobject, x, y) {
         var self = this;
 
@@ -60,13 +66,14 @@ define({
     },
     AS_Image_ce3efd899d214a1788e56c6e75955bd1: function AS_Image_ce3efd899d214a1788e56c6e75955bd1(eventobject, x, y) {
         var self = this;
-        this.view.MainMap.navigateToLocation(currentLocationData, false, false);
         if (GetGPSLockState()) {
             SetGPSLockState(false); // Stop tracking the current location
             this.view.GPSCenterButton.src = "/gps_center.png";
+            kony.timer.cancel("RefreshCurrentPosition");
         } else {
             SetGPSLockState(true); // Restart tracking the current location
             this.view.GPSCenterButton.src = "/gps_center_blue.png";
+            kony.timer.schedule("RefreshCurrentPosition", RefreshCurrentPosition, 5, true);
         }
     },
     AS_Image_g6300fed64954207a54daec5cad41a67: function AS_Image_g6300fed64954207a54daec5cad41a67(eventobject, x, y) {
@@ -108,6 +115,7 @@ define({
         }, {
             "animationEnd": MOVE_ACTION____j19c0b2887fc45a188503d6e68642289_Callback
         });
+        this.view.MainMap.removePin("new pin");
     },
     AS_FlexContainer_id674c6607d542549fe83d95df16b158: function AS_FlexContainer_id674c6607d542549fe83d95df16b158(eventobject, x, y) {
         var self = this;
@@ -117,11 +125,5 @@ define({
     },
     AS_FlexContainer_jbbbee48cb0b4d38a511d058844c34f3: function AS_FlexContainer_jbbbee48cb0b4d38a511d058844c34f3(eventobject) {
         var self = this;
-    },
-    AS_Map_a243975b35a444e09d2c21c1d685152d: function AS_Map_a243975b35a444e09d2c21c1d685152d(eventobject, x, y) {
-        var self = this;
-        SetGPSLockState(false);
-        this.view.GPSCenterButton.src = "/arrow_left.png";
-        alert("helloww");
     }
 });

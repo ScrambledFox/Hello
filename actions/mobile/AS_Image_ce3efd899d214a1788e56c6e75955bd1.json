@@ -22,7 +22,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__f2c1999d4e39424f910af059ec6d518f",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "this.view.MainMap.navigateToLocation(currentLocationData, false, false);\n\nif ( GetGPSLockState() ){\n  SetGPSLockState(false);\t\t\t\t\t\t\t\t\t\t// Stop tracking the current location\n  this.view.GPSCenterButton.src = \"/gps_center.png\";\n} else{\n  SetGPSLockState(true);\t\t\t\t\t\t\t\t\t\t// Restart tracking the current location\n  this.view.GPSCenterButton.src = \"/gps_center_blue.png\";\n}\n\n\n\n",
+            "codeSnippet": "if ( GetGPSLockState() ){\n  SetGPSLockState(false);\t\t\t\t\t\t\t\t\t\t// Stop tracking the current location\n  this.view.GPSCenterButton.src = \"/gps_center.png\";\n  kony.timer.cancel(\"RefreshCurrentPosition\");\n} else{\n  SetGPSLockState(true);\t\t\t\t\t\t\t\t\t\t// Restart tracking the current location\n  this.view.GPSCenterButton.src = \"/gps_center_blue.png\";\n  kony.timer.schedule(\"RefreshCurrentPosition\", RefreshCurrentPosition, 5, true);\n}\n\n\n\n",
             "parentId": null,
             "callbackType": null
         }]

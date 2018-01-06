@@ -52,3 +52,7 @@ function UpdatedCurrentLocationPin () {
   	
  	return currentLocationPin;
 }
+
+function RefreshCurrentPosition () {
+  	alert("Refreshing Position"); 				/// Just for testing purposes!
+}
