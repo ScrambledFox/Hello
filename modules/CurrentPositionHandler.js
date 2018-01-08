@@ -1,5 +1,5 @@
 var currentLatitude = 0;
-var currentLongitude = 0;
+var currentLongitude = 100;
 var currentLocationData = {lat:currentLatitude,lon:currentLongitude,name:"Current Location",desc:"CurrentLocation"};
 
 function successcallback1(position) {
@@ -34,6 +34,7 @@ function errorCallback(error) {
 var positionoptions = {maximumAge: 3000, minimumDistance: 5, minimumTime: 5000};
 watchID = kony.location.watchPosition (successcallback1, errorcallback1, positionoptions);
 
+var previousPin;
 function UpdatedCurrentLocationPin () {
   currentLocationPin = {
       id : "currentPositionPin", // id is mandatory for every pin
@@ -50,9 +51,23 @@ function UpdatedCurrentLocationPin () {
       }
 	};
   	
+  	previousPin = currentLocationPin;
  	return currentLocationPin;
 }
 
+function UpdateCurrentLocationPin(){
+	var currentLocationPin = UpdatedCurrentLocationPin();
+  	var t = kony.application.getCurrentForm();
+  	if(previousPin !== null){
+      t.MainMap.removePin(previousPin);
+    }
+  	t.MainMap.addPin(currentLocationPin);
+}
+
 function RefreshCurrentPosition () {
-  	alert("Refreshing Position"); 				/// Just for testing purposes!
+  	//alert("Refreshing Position"); 				/// Just for testing purposes!
+  	var t = kony.application.getCurrentForm();
+    currentLocationData = {lat:currentLatitude,lon:currentLongitude,name:"Current Location",desc:"CurrentLocation"};
+  	UpdateCurrentLocationPin();
+    t.MainMap.navigateToLocation(currentLocationData, false, false);
 }

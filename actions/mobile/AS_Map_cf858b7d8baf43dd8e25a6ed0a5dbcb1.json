@@ -1,16 +1,13 @@
 {
-    "AS_Map_a243975b35a444e09d2c21c1d685152d": {
-        "id": "AS_Map_a243975b35a444e09d2c21c1d685152d",
+    "AS_Map_cf858b7d8baf43dd8e25a6ed0a5dbcb1": {
+        "id": "AS_Map_cf858b7d8baf43dd8e25a6ed0a5dbcb1",
         "type": "ACTION_SEQUENCE",
         "params": [{
             "datatype": "collection",
             "name": "eventobject"
         }, {
-            "datatype": "string",
-            "name": "x"
-        }, {
-            "datatype": "string",
-            "name": "y"
+            "datatype": "collection",
+            "name": "boundaryLocations"
         }],
         "contextObj": {
             "name": "MainForm",
@@ -20,9 +17,9 @@
         },
         "language": "js",
         "actions": [{
-            "id": "ADD_SNIPPET__bce6e709c77448b293ea34f081d1268d",
+            "id": "ADD_SNIPPET__ie9322665eb84fe0a8671a6db6d5fd76",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "SetGPSLockState(false);\nthis.view.GPSCenterButton.src = \"/arrow_left.png\";\n\nalert(\"helloww\");",
+            "codeSnippet": "SetGPSLockState(false);",
             "parentId": null,
             "callbackType": null
         }]

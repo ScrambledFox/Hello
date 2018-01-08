@@ -1,0 +1,1 @@
+var i18nObject = {"btnLogIn":"Log In"}
