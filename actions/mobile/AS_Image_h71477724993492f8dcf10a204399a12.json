@@ -1,0 +1,30 @@
+{
+    "AS_Image_h71477724993492f8dcf10a204399a12": {
+        "id": "AS_Image_h71477724993492f8dcf10a204399a12",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "MainForm",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b47cb86f1efd4a0aab109b802ed1a973"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__e8813f297d134e8ebd6b26222fb52abe",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "if ( GetGPSLockState() ){\n  SetGPSLockState(false);\t\t\t\t\t\t\t\t\t\t// Stop tracking the current location\n  this.view.GPSCenterButton.src = \"/gps_center_blue.png\";\n} else{\n  SetGPSLockState(true);\t\t\t\t\t\t\t\t\t\t// Restart tracking the current location\n  this.view.GPSCenterButton.src = \"/gps_center.png\";\n}\n\n\n\n",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

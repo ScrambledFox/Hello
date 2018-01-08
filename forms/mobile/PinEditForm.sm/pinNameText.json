@@ -18,16 +18,16 @@
         0,
         0
     ],
-    "_placeholder_": "Hello World!",
+    "_placeholder_": "Empty Pin Name...",
     "_skin_": "s9ca5bc5eb904d728f8b0da12e07ef29",
     "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "16%"
+        "value": "16.80%"
     },
     "_width_": {
         "type": "string",
-        "value": "260dp"
+        "value": "90%"
     },
     "android": {
         "psp": {
@@ -41,7 +41,7 @@
     "canUpdateUI": true,
     "centerx": {
         "type": "string",
-        "value": "50%"
+        "value": "50.03%"
     },
     "containerheight": "",
     "containerheightmode": 1,
@@ -57,6 +57,7 @@
     "name": "kony.ui.TextBox2",
     "parent": "PinEditForm",
     "pf": "PinEditForm",
+    "placeholderskin": "sd147168ec7d4cb4ba0d8b51aa750c38",
     "securetextentry": false,
     "textinputmode": "A",
     "tooltip": "",

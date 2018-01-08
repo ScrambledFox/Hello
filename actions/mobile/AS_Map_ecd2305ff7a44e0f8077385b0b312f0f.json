@@ -1,0 +1,30 @@
+{
+    "AS_Map_ecd2305ff7a44e0f8077385b0b312f0f": {
+        "id": "AS_Map_ecd2305ff7a44e0f8077385b0b312f0f",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "MainForm",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b47cb86f1efd4a0aab109b802ed1a973"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__a32756f7d1a746ab85b76b48150b7e43",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "alert(\"test\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

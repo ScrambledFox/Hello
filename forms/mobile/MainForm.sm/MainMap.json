@@ -8,7 +8,7 @@
     },
     "_left_": {
         "type": "string",
-        "value": "0%"
+        "value": "0.00%"
     },
     "_margin_": [
         0,
@@ -25,7 +25,7 @@
     ],
     "_top_": {
         "type": "string",
-        "value": "8.16%"
+        "value": "8.14%"
     },
     "_width_": {
         "type": "string",
@@ -52,6 +52,7 @@
     "name": "kony.ui.Map",
     "onclick": "AS_Map_f741d57de330451ab2400b30ce4eedd3",
     "onmaploaded": "AS_Map_j017e9ac1ee944168f1c0b4ee46008ab",
+    "ontouchend": "AS_Map_a243975b35a444e09d2c21c1d685152d",
     "parent": "MainMapFlex",
     "pf": "MainForm",
     "provider": "google",

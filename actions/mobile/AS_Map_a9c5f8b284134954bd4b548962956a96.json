@@ -1,0 +1,27 @@
+{
+    "AS_Map_a9c5f8b284134954bd4b548962956a96": {
+        "id": "AS_Map_a9c5f8b284134954bd4b548962956a96",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "collection",
+            "name": "boundaryLocations"
+        }],
+        "contextObj": {
+            "name": "MainForm",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b47cb86f1efd4a0aab109b802ed1a973"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__i688a71404634aba8f707adbf114104e",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "alert(\"just testing\");",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

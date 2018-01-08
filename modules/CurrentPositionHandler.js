@@ -1,6 +1,6 @@
 var currentLatitude = 0;
 var currentLongitude = 0;
-var locationData = {lat:currentLatitude,lon:currentLongitude,name:"Current Location",desc:"CurrentLocation"};
+var currentLocationData = {lat:currentLatitude,lon:currentLongitude,name:"Current Location",desc:"CurrentLocation"};
 
 function successcallback1(position) {
 	var geoPosition = "Latitude: " + position.coords.latitude;
@@ -14,7 +14,7 @@ function successcallback1(position) {
   
   	currentLatitude = position.coords.latitude;
   	currentLongitude = position.coords.longitude;
-  	locationData = {lat:position.coords.latitude,lon:position.coords.longitude,name:"Current Location",desc:"CurrentLocation"};
+  	currentLocationData = {lat:position.coords.latitude,lon:position.coords.longitude,name:"Current Location",desc:"CurrentLocation"};
 }
 
 function errorcallback1(positionerror) {
@@ -33,3 +33,26 @@ function errorCallback(error) {
   
 var positionoptions = {maximumAge: 3000, minimumDistance: 5, minimumTime: 5000};
 watchID = kony.location.watchPosition (successcallback1, errorcallback1, positionoptions);
+
+function UpdatedCurrentLocationPin () {
+  currentLocationPin = {
+      id : "currentPositionPin", // id is mandatory for every pin
+      lat : currentLatitude,
+      lon : currentLongitude,
+      name : "Current Position",
+      image : "location_pin_medium.png",
+      focusImage:"location_pin.png",  //focus image will be shown while map pin selected
+      desc: "You are here!",
+      showCallout : false,
+      meta: {
+          color: "black",
+          label: ""
+      }
+	};
+  	
+ 	return currentLocationPin;
+}
+
+function RefreshCurrentPosition () {
+  	alert("Refreshing Position"); 				/// Just for testing purposes!
+}
