@@ -1,6 +1,6 @@
 {
-    "AS_Image_f85454c1dc734084957fb2d92567fcd3": {
-        "id": "AS_Image_f85454c1dc734084957fb2d92567fcd3",
+    "AS_Image_bb07548c11ec49be92e91dd247e98b4d": {
+        "id": "AS_Image_bb07548c11ec49be92e91dd247e98b4d",
         "type": "ACTION_SEQUENCE",
         "params": [{
             "datatype": "collection",
@@ -12,15 +12,9 @@
             "datatype": "string",
             "name": "y"
         }],
-        "contextObj": {
-            "name": "PinEditForm",
-            "type": "forms",
-            "platform": null,
-            "KUID": "i32ca33bf9764936bf9faa188a7eae0c"
-        },
         "language": "js",
         "actions": [{
-            "id": "NAVIGATE_TO_FORM___h7e6a237d7bd4d1882e9215e4663349d",
+            "id": "NAVIGATE_TO_FORM__onTouchStart_fa6344b863654be5a25ce59b53fd670b",
             "type": "NAVIGATE_TO_FORM",
             "formId": "MainForm",
             "formKUID": "b47cb86f1efd4a0aab109b802ed1a973",
@@ -31,10 +25,9 @@
             "enableMappingEditor": true,
             "package": ""
         }, {
-            "id": "ADD_SNIPPET__e42b124ec0d04d568c90cf6e6201ffd9",
+            "id": "ADD_SNIPPET_onTouchStart_j37d6be0b719473ab468b8e343f18d76",
             "type": "ADD_SNIPPET",
             "codeSnippet": "tempNewPin = CreatePin();",
-            "parentId": null,
             "callbackType": null
         }]
     }

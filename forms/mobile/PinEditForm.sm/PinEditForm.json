@@ -32,11 +32,9 @@
     },
     "canUpdateUI": true,
     "children": [
-        "goBackArrow",
-        "pinNameLabel",
-        "pinDescriptionLabel",
-        "pinNameText",
-        "pinDescriptionText"
+        "MainPinEditFlex",
+        "Button0e916f8841d0442",
+        "Solids"
     ],
     "containerweight": 100,
     "controllerInfo": {
@@ -52,6 +50,7 @@
     "device": "GalaxyS5",
     "displayorientation": 1,
     "enabledforidletimeout": false,
+    "headeroverlap": false,
     "id": "PinEditForm",
     "info": null,
     "initdone": false,

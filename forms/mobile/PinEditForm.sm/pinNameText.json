@@ -23,7 +23,7 @@
     "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "16.80%"
+        "value": "15%"
     },
     "_width_": {
         "type": "string",
@@ -55,7 +55,7 @@
     "kuid": "f02333f2fcae428da7943dc27d985a26",
     "mode": "A",
     "name": "kony.ui.TextBox2",
-    "parent": "PinEditForm",
+    "parent": "MainPinEditFlex",
     "pf": "PinEditForm",
     "placeholderskin": "sd147168ec7d4cb4ba0d8b51aa750c38",
     "securetextentry": false,

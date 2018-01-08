@@ -6,6 +6,10 @@
         "type": "ref",
         "value": "preferred"
     },
+    "_left_": {
+        "type": "string",
+        "value": "83dp"
+    },
     "_margin_": [
         1,
         1,
@@ -19,10 +23,10 @@
         0
     ],
     "_skin_": "sdd6b27f598040e3bb41b6f9fcd1384f",
-    "_text_": "Title",
+    "_text_": "Label",
     "_top_": {
         "type": "string",
-        "value": "12%"
+        "value": "893dp"
     },
     "_width_": {
         "type": "ref",
@@ -36,13 +40,9 @@
         }
     },
     "canUpdateUI": true,
-    "centerx": {
-        "type": "string",
-        "value": "49.94%"
-    },
     "containerweight": 100,
     "contentalignment": 4,
-    "id": "pinNameLabel",
+    "id": "Label0c27d01016ce049",
     "info": null,
     "ipad": {
         "psp": {
@@ -55,7 +55,7 @@
         }
     },
     "isvisible": true,
-    "kuid": "a40feb1026724ed0ab42850ed294719b",
+    "kuid": "f6766ac27b94490883a8ebe2b275ffb8",
     "name": "kony.ui.Label",
     "parent": "MainPinEditFlex",
     "pf": "PinEditForm",

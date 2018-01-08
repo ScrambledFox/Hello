@@ -23,7 +23,7 @@
     "_text_": "",
     "_top_": {
         "type": "string",
-        "value": "35%"
+        "value": "23%"
     },
     "_width_": {
         "type": "string",
@@ -41,7 +41,7 @@
     "canUpdateUI": true,
     "centerx": {
         "type": "string",
-        "value": "50%"
+        "value": "50.00%"
     },
     "closebuttontext": "",
     "containerheight": "",
@@ -59,7 +59,7 @@
     "name": "kony.ui.TextArea2",
     "numberofvisiblelines": 3,
     "paddinginpixel": false,
-    "parent": "PinEditForm",
+    "parent": "MainPinEditFlex",
     "pf": "PinEditForm",
     "placeholderskin": "s052cf628f0d43d291f72c34ec362602",
     "securetextentry": false,

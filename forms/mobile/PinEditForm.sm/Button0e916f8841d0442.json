@@ -1,0 +1,49 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "53dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s2cbd22c28d7457287979a4cbad01614",
+    "_text_": "Button",
+    "_top_": {
+        "type": "string",
+        "value": "371dp"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "260dp"
+    },
+    "canUpdateUI": true,
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s41b2ca531584a81a7b92df71cf3b22b",
+    "id": "Button0e916f8841d0442",
+    "info": null,
+    "isvisible": true,
+    "kuid": "e50b2f0f8e5549248c8c9a3902db879b",
+    "name": "kony.ui.Button",
+    "parent": "PinEditForm",
+    "pf": "PinEditForm",
+    "wType": "Button",
+    "zindex": 1
+}

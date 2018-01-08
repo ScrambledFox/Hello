@@ -80,12 +80,6 @@
             "parentId": null,
             "callbackType": null,
             "widgetPath": "this.view.MenuFlex"
-        }, {
-            "id": "ADD_SNIPPET__e64219f8a69945f8bcab83d5e043a7a5",
-            "type": "ADD_SNIPPET",
-            "codeSnippet": "this.view.MainMap.removePin(\"new pin\");",
-            "parentId": null,
-            "callbackType": null
         }]
     }
 }

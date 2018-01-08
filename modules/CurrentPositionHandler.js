@@ -58,7 +58,7 @@ function UpdatedCurrentLocationPin () {
 function UpdateCurrentLocationPin(){
 	var currentLocationPin = UpdatedCurrentLocationPin();
   	var t = kony.application.getCurrentForm();
-  	if(previousPin !== null){
+  	if(previousPin !== null && t !== null){
       t.MainMap.removePin(previousPin);
     }
   	t.MainMap.addPin(currentLocationPin);
