@@ -29,7 +29,7 @@
     "winmobileguidkey": "",
     "defaulttheme": "defaultTheme",
     "nativeContainerProperties": {
-        "isModified": true,
+        "isModified": false,
         "isEnableJSContainer": false,
         "isEnableJSContainerAndroid": false,
         "isEnableJSContaineriOS": false
@@ -208,5 +208,7 @@
         "shareGuid": "ADWKU",
         "resourceId": "dabc0638-9302-4f97-9604-bba3ee4e7290",
         "PublishMode": "protected"
-    }
+    },
+    "defaultlocalekey": "en_GB",
+    "isI18nConfigEnabled": true
 }

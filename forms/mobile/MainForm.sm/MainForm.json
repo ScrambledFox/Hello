@@ -39,7 +39,7 @@
             "name": "MainFormController"
         }
     },
-    "currentLocale": "default",
+    "currentLocale": "en_GB",
     "desktopweb": {
         "needAppMenu": false
     },
