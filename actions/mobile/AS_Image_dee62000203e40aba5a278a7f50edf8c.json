@@ -1,0 +1,41 @@
+{
+    "AS_Image_dee62000203e40aba5a278a7f50edf8c": {
+        "id": "AS_Image_dee62000203e40aba5a278a7f50edf8c",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "PinEditForm",
+            "type": "forms",
+            "platform": "",
+            "KUID": "i32ca33bf9764936bf9faa188a7eae0c"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__bd2e9e7f31f84b268d8c2dd63578d12d",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "var t = kony.application.getPreviousForm();\nt.MainMap.removePin(lastCreatedPin);",
+            "parentId": null,
+            "callbackType": null
+        }, {
+            "id": "NAVIGATE_TO_FORM___d362cef5095246879eedc8dfdc9e208f",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "MainForm",
+            "formKUID": "b47cb86f1efd4a0aab109b802ed1a973",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": null,
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "package": ""
+        }]
+    }
+}

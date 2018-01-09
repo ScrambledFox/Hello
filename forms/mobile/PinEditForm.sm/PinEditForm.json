@@ -33,7 +33,6 @@
     "canUpdateUI": true,
     "children": [
         "MainPinEditFlex",
-        "Button0e916f8841d0442",
         "Solids"
     ],
     "containerweight": 100,

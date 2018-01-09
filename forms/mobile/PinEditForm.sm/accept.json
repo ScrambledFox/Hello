@@ -5,7 +5,7 @@
     "_base64_": null,
     "_height_": {
         "type": "string",
-        "value": "90%"
+        "value": "60%"
     },
     "_left_": {
         "type": "string",
@@ -27,7 +27,7 @@
     "_src_": "acceptvinkje.png",
     "_top_": {
         "type": "string",
-        "value": "5%"
+        "value": "20%"
     },
     "_width_": {
         "type": "string",
@@ -49,7 +49,7 @@
     "isvisible": true,
     "kuid": "f343e6e6de9341b8a4ceda153ff5cf7b",
     "name": "kony.ui.Image2",
-    "ontouchstart": "AS_Image_e6e816c58c984389b6f917df92463685",
+    "ontouchstart": "AS_Image_b2ee20f5a4634faa8283c6222682cbe3",
     "parent": "Solids",
     "pf": "PinEditForm",
     "srcType": 1,

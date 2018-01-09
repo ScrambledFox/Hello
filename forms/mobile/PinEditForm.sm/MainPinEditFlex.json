@@ -3,7 +3,7 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "192.39%"
+        "value": "90%"
     },
     "_left_": {
         "type": "string",
@@ -26,7 +26,7 @@
     "_skin_": "s2025a69f29a47c5ac2c72ade222010a",
     "_top_": {
         "type": "string",
-        "value": "7.50%"
+        "value": "10.03%"
     },
     "_width_": {
         "type": "string",
@@ -39,11 +39,11 @@
     "canUpdateUI": true,
     "children": [
         "pinImagePreview",
+        "infoLabel",
         "pinNameLabel",
         "pinNameText",
-        "pinDescriptionText",
         "pinDescriptionLabel",
-        "Label0c27d01016ce049"
+        "pinDescriptionText"
     ],
     "clipbounds": true,
     "containerweight": 100,
@@ -55,7 +55,7 @@
     "info": null,
     "isvisible": true,
     "kuid": "a282117527f04a538a597efbd4335005",
-    "layouttype": 2,
+    "layouttype": 4,
     "name": "kony.ui.FlexScrollContainer",
     "pagingenabled": false,
     "parent": "PinEditForm",
@@ -65,6 +65,7 @@
     "snaptogrid": true,
     "track": false,
     "verticalscrollindicator": true,
+    "vizProps": {},
     "wType": "FlexScrollContainer",
     "widgetalignment": 1,
     "zindex": 1
