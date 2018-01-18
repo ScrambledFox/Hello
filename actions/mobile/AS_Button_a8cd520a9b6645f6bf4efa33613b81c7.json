@@ -1,0 +1,24 @@
+{
+    "AS_Button_a8cd520a9b6645f6bf4efa33613b81c7": {
+        "id": "AS_Button_a8cd520a9b6645f6bf4efa33613b81c7",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }],
+        "contextObj": {
+            "name": "LogForm",
+            "type": "forms",
+            "platform": "",
+            "KUID": "g5115f1578d2423da0478db5d2e24ede"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__ea95b0c5bb72480d8cca7104492b15c5",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "CreateAccount(this.view.tbUsername.text, this.view.tbPassword.text);",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

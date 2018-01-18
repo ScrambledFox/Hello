@@ -46,6 +46,7 @@
     "isvisible": true,
     "kuid": "cf10ea2fa396411788ee8582f3c279ae",
     "name": "kony.ui.Button",
+    "onclick": "AS_Button_a8cd520a9b6645f6bf4efa33613b81c7",
     "parent": "LogForm",
     "pf": "LogForm",
     "texti18n": "btnSignUp",

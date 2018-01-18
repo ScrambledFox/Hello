@@ -53,6 +53,7 @@
     "isvisible": true,
     "kuid": "e28638bbb9f840d29f8ab696cd7a445f",
     "name": "kony.ui.Image2",
+    "ontouchend": "AS_Image_j70a7f9b764b463e8741c1696834bd22",
     "parent": "LogForm",
     "pf": "LogForm",
     "srcType": 1,
