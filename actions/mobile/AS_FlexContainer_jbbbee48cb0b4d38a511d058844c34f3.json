@@ -13,6 +13,17 @@
             "KUID": "b47cb86f1efd4a0aab109b802ed1a973"
         },
         "language": "js",
-        "actions": []
+        "actions": [{
+            "id": "NAVIGATE_TO_FORM___h0670d64e59b42e1b2a152d286d59e7f",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "LogForm",
+            "formKUID": "g5115f1578d2423da0478db5d2e24ede",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "",
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "package": ""
+        }]
     }
 }

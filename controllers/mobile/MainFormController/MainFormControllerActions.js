@@ -110,13 +110,9 @@ define({
             "animationEnd": MOVE_ACTION____j19c0b2887fc45a188503d6e68642289_Callback
         });
     },
-    AS_FlexContainer_id674c6607d542549fe83d95df16b158: function AS_FlexContainer_id674c6607d542549fe83d95df16b158(eventobject, x, y) {
-        var self = this;
-    },
-    AS_FlexContainer_c82888ae5f504f73a3b9b508e72e564f: function AS_FlexContainer_c82888ae5f504f73a3b9b508e72e564f(eventobject, x, y) {
-        var self = this;
-    },
     AS_FlexContainer_jbbbee48cb0b4d38a511d058844c34f3: function AS_FlexContainer_jbbbee48cb0b4d38a511d058844c34f3(eventobject) {
         var self = this;
+        var ntf = new kony.mvc.Navigation("LogForm");
+        ntf.navigate();
     }
 });

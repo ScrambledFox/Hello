@@ -1,1 +1,1 @@
-var i18nObject = {"btnLogIn":"Inloggen"}
+var i18nObject = {"btnLogIn":"Inloggen","tbUsername":"Gebruikersnaam...","tbPassword":"Wachtwoord...","noAccountQuestion":"Heb je nog geen account?","btnSignUp":"Maak een account","btnSignUpFacebook":"Log in met Facebook"}

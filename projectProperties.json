@@ -200,13 +200,13 @@
     },
     "enableCordova": true,
     "accountCloudGuid": "e3694344-dc28-457f-beee-e559f058a105",
-    "projectCloudGuid": "b0c9d7c1-173e-4a7c-8c24-de5f2ae108bf",
+    "projectCloudGuid": "b0c49f51-7a38-46a8-bda9-e9af2f4635f0",
     "prototype": {
-        "createdOn": "2017-11-27T11:36:15.940Z",
+        "createdOn": "2018-01-18T12:26:41.985Z",
         "createdById": "0d43a52b-827d-4376-b1f5-24b4922a9a7c",
         "createdBy": "Joris Lodewijks",
-        "shareGuid": "ADWKU",
-        "resourceId": "dabc0638-9302-4f97-9604-bba3ee4e7290",
+        "shareGuid": "EJY1P",
+        "resourceId": "9be63474-47b6-4455-96eb-244926cd4417",
         "PublishMode": "protected"
     },
     "defaultlocalekey": "en_GB",

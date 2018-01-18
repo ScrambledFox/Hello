@@ -1,0 +1,54 @@
+{
+    "@class": "com.kony.gen.viz.model.component.KVizButton",
+    "DNDConfig": null,
+    "__parentReadjusting__": false,
+    "_height_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_left_": {
+        "type": "string",
+        "value": "50dp"
+    },
+    "_margin_": [
+        6,
+        6,
+        6,
+        6
+    ],
+    "_padding_": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "_skin_": "s6591f8553f445e09cb6ba4bda53aedb",
+    "_text_": "Button",
+    "_top_": {
+        "type": "string",
+        "value": "77.50%"
+    },
+    "_width_": {
+        "type": "string",
+        "value": "260dp"
+    },
+    "canUpdateUI": true,
+    "centerx": {
+        "type": "string",
+        "value": "50%"
+    },
+    "containerweight": 100,
+    "contentalignment": 5,
+    "displaytext": true,
+    "focusskin": "s41b2ca531584a81a7b92df71cf3b22b",
+    "id": "btnSignUp",
+    "info": null,
+    "isvisible": true,
+    "kuid": "cf10ea2fa396411788ee8582f3c279ae",
+    "name": "kony.ui.Button",
+    "parent": "LogForm",
+    "pf": "LogForm",
+    "texti18n": "btnSignUp",
+    "wType": "Button",
+    "zindex": 1
+}

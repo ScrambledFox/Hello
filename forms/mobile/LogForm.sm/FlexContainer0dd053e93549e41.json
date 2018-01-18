@@ -3,11 +3,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "10%"
+        "value": "50dp"
     },
     "_left_": {
         "type": "string",
-        "value": "194%"
+        "value": "0dp"
     },
     "_margin_": [
         0,
@@ -26,35 +26,34 @@
     "_skin_": "s9b80957355f4f058fb5907a85c5758f",
     "_top_": {
         "type": "string",
-        "value": "10%"
+        "value": "87.50%"
     },
     "_width_": {
         "type": "string",
-        "value": "45%"
+        "value": "100%"
     },
     "allboxes": [],
     "autogrowmode": 0,
     "canUpdateUI": true,
     "centerx": {
         "type": "string",
-        "value": "75%"
+        "value": "50%"
     },
     "children": [
-        "buttonImage",
-        "buttonLabel"
+        "imgFacebook",
+        "btnSignUpFacebook"
     ],
     "clipbounds": true,
     "containerweight": 100,
     "enablescrolling": true,
-    "id": "logInFlex",
+    "id": "FlexContainer0dd053e93549e41",
     "info": null,
     "isvisible": true,
-    "kuid": "c769ee8f95734e3f8e3a3fc7bd3c8178",
+    "kuid": "i8b8bf2ef2e24192a61c5337773e8ce8",
     "layouttype": 2,
     "name": "kony.ui.FlexContainer",
-    "onclick": "AS_FlexContainer_jbbbee48cb0b4d38a511d058844c34f3",
-    "parent": "MenuFlex",
-    "pf": "MainForm",
+    "parent": "LogForm",
+    "pf": "LogForm",
     "snapgridsize": 10,
     "snaptogrid": true,
     "wType": "FlexContainer",
