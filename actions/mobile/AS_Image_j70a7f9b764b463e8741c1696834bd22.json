@@ -20,15 +20,11 @@
         },
         "language": "js",
         "actions": [{
-            "id": "INVOKE_FUNCTION___c5b8d59db7b844d2ac911fd61d7693ff",
-            "type": "INVOKE_FUNCTION",
-            "sequenceKUID": "GetAllAccounts",
-            "display": "GetAllAccounts",
-            "inputparams": [],
+            "id": "ADD_SNIPPET__d515f8f9db444a7bb9b478bdb78b10d4",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "LogIn(this.view.tbUsername.text, this.view.tbPassword.text);",
             "parentId": null,
-            "callbackType": null,
-            "disabled": null,
-            "source": "module"
+            "callbackType": null
         }]
     }
 }

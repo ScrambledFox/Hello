@@ -8,6 +8,6 @@ define({
     },
     AS_Image_j70a7f9b764b463e8741c1696834bd22: function AS_Image_j70a7f9b764b463e8741c1696834bd22(eventobject, x, y) {
         var self = this;
-        return GetAllAccounts.call(this);
+        LogIn(this.view.tbUsername.text, this.view.tbPassword.text);
     }
 });
