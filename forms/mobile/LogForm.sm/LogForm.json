@@ -32,7 +32,9 @@
         "lblSignUp",
         "btnSignUp",
         "btnLogIn",
-        "FlexContainer0dd053e93549e41"
+        "flxFacebook",
+        "prmptComfirmation",
+        "prmptError"
     ],
     "containerweight": 100,
     "controllerInfo": {

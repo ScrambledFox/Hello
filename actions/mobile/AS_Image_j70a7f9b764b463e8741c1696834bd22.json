@@ -25,6 +25,30 @@
             "codeSnippet": "LogIn(this.view.tbUsername.text, this.view.tbPassword.text);",
             "parentId": null,
             "callbackType": null
+        }, {
+            "id": "IF_CONDITION__c1a9ab9ea99146e2b9fc7275b91e6d1f",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValueType": "varvalue",
+                "leftValue": "loggedIn",
+                "operator": "===",
+                "rightValueType": "value",
+                "rightValue": "true"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "criteria": "all"
+        }, {
+            "id": "NAVIGATE_TO_FORM___h68a2846cbfe4f4f9046835ab97da869",
+            "type": "NAVIGATE_TO_FORM",
+            "formId": "MainForm",
+            "formKUID": "b47cb86f1efd4a0aab109b802ed1a973",
+            "mappings": {},
+            "mappingsOrder": [],
+            "parentId": "IF_CONDITION__c1a9ab9ea99146e2b9fc7275b91e6d1f",
+            "callbackType": null,
+            "enableMappingEditor": true,
+            "package": ""
         }]
     }
 }

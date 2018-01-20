@@ -53,7 +53,7 @@
     "isvisible": true,
     "kuid": "a56731ac91b641a6884690290d2387ff",
     "name": "kony.ui.Image2",
-    "parent": "FlexContainer0dd053e93549e41",
+    "parent": "flxFacebook",
     "pf": "LogForm",
     "srcType": 1,
     "wType": "Image",

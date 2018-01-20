@@ -4,11 +4,11 @@
     "__parentReadjusting__": false,
     "_height_": {
         "type": "string",
-        "value": "50dp"
+        "value": "10%"
     },
     "_left_": {
         "type": "string",
-        "value": "60dp"
+        "value": "50dp"
     },
     "_margin_": [
         6,
@@ -22,22 +22,18 @@
         0,
         0
     ],
-    "_skin_": "s6591f8553f445e09cb6ba4bda53aedb",
-    "_text_": "Button",
+    "_skin_": "s2cbd22c28d7457287979a4cbad01614",
+    "_text_": "Okay",
     "_top_": {
         "type": "string",
-        "value": "0%"
+        "value": "80%"
     },
     "_width_": {
         "type": "string",
-        "value": "260dp"
+        "value": "30%"
     },
     "canUpdateUI": true,
     "centerx": {
-        "type": "string",
-        "value": "50%"
-    },
-    "centery": {
         "type": "string",
         "value": "50%"
     },
@@ -45,14 +41,14 @@
     "contentalignment": 5,
     "displaytext": true,
     "focusskin": "s41b2ca531584a81a7b92df71cf3b22b",
-    "id": "btnSignUpFacebook",
+    "id": "btnOkay",
     "info": null,
     "isvisible": true,
-    "kuid": "a9175d21d12644b890c1efbf822933ee",
+    "kuid": "b6856f7c18214071881ce600516f1ccc",
     "name": "kony.ui.Button",
-    "parent": "flxFacebook",
+    "onclick": "AS_Button_a27d95ac34ff4ccc8ef29248ba0bd439",
+    "parent": "prmptError",
     "pf": "LogForm",
-    "texti18n": "btnSignUpFacebook",
     "wType": "Button",
     "zindex": 1
 }

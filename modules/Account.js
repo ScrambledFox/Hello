@@ -1,4 +1,12 @@
+var myUsername = "";
+var myPassword = "";
+
+
 function CreateAccount (accountName, accountPassword) {
+  myUsername = accountName;
+  myPassword = accountPassword;
+  GetAllAccounts("CheckForDuplicateName");
+  
   try{
     var postdata = {
       "Username": accountName,
@@ -11,18 +19,26 @@ function CreateAccount (accountName, accountPassword) {
   }
 }
 
-var myUsername = "";
-var myPassword = "";
-
 function LogIn (user, pass) {
   myUsername = user;
   myPassword = pass;
-  GetAllAccounts();
+  GetAllAccounts("CheckCredentials");
 }
 
-function GetAllAccounts () {
+function GetAllAccounts (functionType) {
   var client = GetHTTPClient("GetAllAccounts");
-  client.onReadyStateChange = httpCallbackHandler;
+  
+  switch (functionType) {
+    case "CheckCredentials":
+      client.onReadyStateChange = CheckCredentials;
+      break;
+    case "CheckForDuplicateName":
+      client.onReadyStateChange = CheckForDuplicateName;
+      break;
+    default:
+      alert("Case: " + dbTableName + "not known");
+      break;
+  }
   
   try{
     client.send();
@@ -32,13 +48,20 @@ function GetAllAccounts () {
   }
 }
 
-function httpCallbackHandler () {
+function CheckCredentials () {
+  if(this.readyState == constants.HTTP_READY_STATE_DONE){     
+    CheckForAccountCredentials(this.response);
+  }
+}
+
+function CheckForDuplicateName () {
   if(this.readyState == constants.HTTP_READY_STATE_DONE){     
     CheckForRegisteredAccount(this.response);
   }
 }
 
-function CheckForRegisteredAccount(response){
+
+function CheckForAccountCredentials (response) {
   var username = "";
   var password = "";
   
@@ -55,11 +78,8 @@ function CheckForRegisteredAccount(response){
     
     if (username == myUsername) {
       if (password == myPassword) {
-        alert("Username and password correct");
-      } else {
-        alert("Password not correct with the given username");
+        PostLogIn(username);
       }
-    } else {
     }
   }
 }
@@ -91,4 +111,29 @@ function GetHTTPClient (dbTableName) {
   catch (error) {
     alert(error.message);
   }
+}
+
+function CheckForRegisteredAccount (response) {
+  var usernameFromDB = "";
+  
+  for(var k in response){
+    r = response[k];
+    for(var k2 in r){
+      if (k2 == "Username"){
+        usernameFromDB = r[k2];
+      }
+    }
+    
+    if (usernameFromDB == myUsername) {
+      alert("duplicate name found");
+      return true;
+    }
+  }
+  
+  return false;
+}
+
+function PostLogIn (username) {
+  alert("Logged in with user: " + username);
+  loggedIn = true;
 }

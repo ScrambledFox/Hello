@@ -14,11 +14,94 @@
         },
         "language": "js",
         "actions": [{
+            "id": "IF_CONDITION__a47b6f8cefc74fc09c90be5403431c52",
+            "type": "IF_CONDITION",
+            "conditions": [{
+                "leftValueType": "widgetprop",
+                "leftValue": "LogForm.tbUsername.text",
+                "operator": "===",
+                "rightValueType": "value",
+                "rightValue": "null",
+                "leftItemKUID": "g5115f1578d2423da0478db5d2e24ede",
+                "leftWidgetKUID": "cc405d8c43a24c41b46b56769d829681"
+            }, {
+                "leftValueType": "widgetprop",
+                "leftValue": "LogForm.tbUsername.text",
+                "operator": "===",
+                "rightValueType": "value",
+                "rightValue": "\"\"",
+                "leftItemKUID": "g5115f1578d2423da0478db5d2e24ede",
+                "leftWidgetKUID": "cc405d8c43a24c41b46b56769d829681"
+            }, {
+                "leftValueType": "widgetprop",
+                "leftValue": "LogForm.tbPassword.text",
+                "operator": "===",
+                "rightValueType": "value",
+                "rightValue": "null",
+                "leftItemKUID": "g5115f1578d2423da0478db5d2e24ede",
+                "leftWidgetKUID": "ad2e856b8ba4469c8b723f62c864f3bd"
+            }, {
+                "leftValueType": "widgetprop",
+                "leftValue": "LogForm.tbPassword.text",
+                "operator": "===",
+                "rightValueType": "value",
+                "rightValue": "\"\"",
+                "leftItemKUID": "g5115f1578d2423da0478db5d2e24ede",
+                "leftWidgetKUID": "ad2e856b8ba4469c8b723f62c864f3bd"
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "criteria": "any"
+        }, {
+            "id": "ELSE_CONDITION__b550939725484ab39a6446a27c6c6ca3",
+            "type": "ELSE_CONDITION",
+            "conditions": [{
+                "leftValueType": "widgetprop",
+                "leftValue": "",
+                "operator": "===",
+                "rightValueType": "widgetprop",
+                "rightValue": ""
+            }],
+            "parentId": null,
+            "callbackType": null,
+            "criteria": "all"
+        }, {
+            "id": "MOVE_ACTION____f97aa1bd9c344219904feae7f848abf8",
+            "type": "MOVE_ACTION",
+            "itemType": "FORM",
+            "itemId": "LogForm",
+            "widgetId": "prmptError",
+            "itemKUID": "g5115f1578d2423da0478db5d2e24ede",
+            "widgetKUID": "g199944862664192b3acfecbc11aaa63",
+            "wType": "FlexContainer",
+            "animationObject": {
+                "centerX": "50%",
+                "anchorPoint": {},
+                "stepConfig": {
+                    "timingFunction": "kony.anim.EASE"
+                },
+                "rectified": true
+            },
+            "config": {
+                "delay": "0",
+                "iterationCount": 1,
+                "fillMode": "kony.anim.FILL_MODE_FORWARDS",
+                "duration": "250"
+            },
+            "start": "Immediately",
+            "animationId": "MOVE_ACTION____f97aa1bd9c344219904feae7f848abf8",
+            "displayAnimationId": "MOVE_ACTION____f97aa1bd9c344219904feae7f848abf8",
+            "forkedPlatform": "all",
+            "parentId": "IF_CONDITION__a47b6f8cefc74fc09c90be5403431c52",
+            "callbackType": null,
+            "widgetPath": "this.view.prmptError"
+        }, {
             "id": "ADD_SNIPPET__ea95b0c5bb72480d8cca7104492b15c5",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "CreateAccount(this.view.tbUsername.text, this.view.tbPassword.text);",
-            "parentId": null,
-            "callbackType": null
+            "codeSnippet": "// Create the account\nCreateAccount(this.view.tbUsername.text, this.view.tbPassword.text);",
+            "parentId": "ELSE_CONDITION__b550939725484ab39a6446a27c6c6ca3",
+            "callbackType": null,
+            "disabled": false
         }]
     }
 }
