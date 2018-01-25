@@ -7,7 +7,9 @@ define({
         var data = GetLattLong();
         var lat = data[0];
         var lon = data[1];
-        var newPin = CreatePin("new pin", lat, lon, this.view.pinNameText.text, this.view.pinDescriptionText.text, "location_pin_medium.png", "location_pin.png");
+        var randomID = GenerateRandomID();
+        var newPin = CreatePin(randomID, lat, lon, this.view.pinNameText.text, this.view.pinDescriptionText.text, "location_pin_medium.png", "location_pin.png");
+        UploadPinData(randomID, lat, lon, this.view.pinNameText.text, this.view.pinDescriptionText.text, "location_pin_medium.png");
         var t = kony.application.getPreviousForm();
         t.MainMap.addPin(newPin);
         var ntf = new kony.mvc.Navigation("MainForm");

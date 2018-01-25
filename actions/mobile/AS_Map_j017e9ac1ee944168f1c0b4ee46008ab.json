@@ -10,7 +10,7 @@
         "actions": [{
             "id": "ADD_SNIPPET_onMapLoaded_c06e81e3ba774c09b444ebe1b0a7a348",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "if (currentLocationData != null){\n  \tthis.view.MainMap.zoomLevel = 15;\n\tthis.view.MainMap.navigateToLocation(currentLocationData, false, false);\n  \n  \tUpdateCurrentLocationPin();\n}\n",
+            "codeSnippet": "if (currentLocationData != null){\n  \tthis.view.MainMap.zoomLevel = 15;\n\tthis.view.MainMap.navigateToLocation(currentLocationData, false, false);\n  \n  \tUpdateCurrentLocationPin();\n}\n\nRenewPinsFromDB();\n",
             "callbackType": null
         }]
     }

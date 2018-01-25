@@ -22,7 +22,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__a0127ce9d1ce4390b35cb8d5d0068798",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "var data = GetLattLong();\n\nvar lat = data[0];\nvar lon = data[1];\n\nvar newPin = CreatePin(\"new pin\", lat, lon, this.view.pinNameText.text, this.view.pinDescriptionText.text, \"location_pin_medium.png\", \"location_pin.png\");\n\nvar t = kony.application.getPreviousForm();\nt.MainMap.addPin(newPin);",
+            "codeSnippet": "var data = GetLattLong();\n\nvar lat = data[0];\nvar lon = data[1];\n\nvar randomID = GenerateRandomID();\nvar newPin = CreatePin(randomID, lat, lon, this.view.pinNameText.text, this.view.pinDescriptionText.text, \"location_pin_medium.png\", \"location_pin.png\");\nUploadPinData(randomID, lat, lon, this.view.pinNameText.text, this.view.pinDescriptionText.text, \"location_pin_medium.png\");\n\nvar t = kony.application.getPreviousForm();\nt.MainMap.addPin(newPin);",
             "parentId": null,
             "callbackType": null
         }, {

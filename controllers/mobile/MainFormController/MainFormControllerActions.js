@@ -16,6 +16,7 @@ define({
             this.view.MainMap.navigateToLocation(currentLocationData, false, false);
             UpdateCurrentLocationPin();
         }
+        RenewPinsFromDB();
     },
     AS_Map_cf858b7d8baf43dd8e25a6ed0a5dbcb1: function AS_Map_cf858b7d8baf43dd8e25a6ed0a5dbcb1(eventobject, boundaryLocations) {
         var self = this;
@@ -60,6 +61,7 @@ define({
         }, {
             "animationEnd": MOVE_ACTION____c609f7caa0ec41ab930ad188d011c7e0_Callback
         });
+        GetLocationKey();
     },
     AS_Image_ce3efd899d214a1788e56c6e75955bd1: function AS_Image_ce3efd899d214a1788e56c6e75955bd1(eventobject, x, y) {
         var self = this;

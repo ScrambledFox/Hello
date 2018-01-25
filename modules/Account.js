@@ -97,6 +97,13 @@ function GetHTTPClient (dbTableName) {
       case "GetAllAccounts":
         httpclient.open(constants.HTTP_METHOD_GET, "https://hello-ea2f.restdb.io/rest/accounts");
       	break;
+      case "PostPin":
+        httpclient.open(constants.HTTP_METHOD_POST, "https://hello-ea2f.restdb.io/rest/map-pins");
+        httpclient.setRequestHeader("Content-Type", "application/json");
+        break;
+      case "GetAllPins":
+        httpclient.open(constants.HTTP_METHOD_GET, "https://hello-ea2f.restdb.io/rest/map-pins");
+        break;
       default:
         alert("Case: " + dbTableName + "not known");
         

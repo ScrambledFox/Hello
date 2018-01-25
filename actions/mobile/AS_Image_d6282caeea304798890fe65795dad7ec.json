@@ -81,6 +81,12 @@
             "parentId": null,
             "callbackType": null,
             "widgetPath": "this.view.MenuFlex"
+        }, {
+            "id": "ADD_SNIPPET__fc70232696f743909a4220f0b5bf4658",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "GetLocationKey();",
+            "parentId": null,
+            "callbackType": null
         }]
     }
 }
