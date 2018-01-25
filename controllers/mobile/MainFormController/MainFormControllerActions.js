@@ -116,7 +116,7 @@ define({
         var ntf = new kony.mvc.Navigation("LogForm");
         ntf.navigate();
     },
-    AS_Image_ab05196516c348fc8699e149a72560f8: function AS_Image_ab05196516c348fc8699e149a72560f8(eventobject, x, y) {
+    AS_Image_d64c07cbc9784f04851610b9496a54f1: function AS_Image_d64c07cbc9784f04851610b9496a54f1(eventobject, x, y) {
         var self = this;
         GetWeatherData();
     }

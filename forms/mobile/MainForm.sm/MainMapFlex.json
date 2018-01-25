@@ -37,7 +37,8 @@
     "children": [
         "MainMap",
         "menuButton",
-        "GPSCenterButton"
+        "GPSCenterButton",
+        "btnCloud"
     ],
     "clipbounds": false,
     "containerweight": 100,

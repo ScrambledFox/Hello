@@ -1,0 +1,23 @@
+{
+    "AS_Image_d64c07cbc9784f04851610b9496a54f1": {
+        "id": "AS_Image_d64c07cbc9784f04851610b9496a54f1",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET_onTouchEnd_je45a9c7b1a7427c9f0fcfe481e88066",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "GetWeatherData();",
+            "callbackType": null
+        }]
+    }
+}
