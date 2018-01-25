@@ -26,3 +26,15 @@ function CreatePin (id, latitude, longitude, name, description, imageSource, ima
   lastCreatedPin = newPin;
   return newPin;
 }
+
+
+var latt, long;
+function SetLattLong (newLatt, newLong) {
+  latt = newLatt;
+  long = newLong;
+}
+
+function GetLattLong () {
+  var data = new Array(latt, long);
+  return data;
+}

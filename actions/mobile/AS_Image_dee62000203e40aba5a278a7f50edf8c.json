@@ -20,12 +20,6 @@
         },
         "language": "js",
         "actions": [{
-            "id": "ADD_SNIPPET__bd2e9e7f31f84b268d8c2dd63578d12d",
-            "type": "ADD_SNIPPET",
-            "codeSnippet": "var t = kony.application.getPreviousForm();\nt.MainMap.removePin(lastCreatedPin);",
-            "parentId": null,
-            "callbackType": null
-        }, {
             "id": "NAVIGATE_TO_FORM___d362cef5095246879eedc8dfdc9e208f",
             "type": "NAVIGATE_TO_FORM",
             "formId": "MainForm",

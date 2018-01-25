@@ -19,7 +19,7 @@
         "actions": [{
             "id": "ADD_SNIPPET__ba3b6dd626ba4c08a911e9122e058d63",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "var newPin = CreatePin(\"new pin\", location[\"lat\"], location[\"lon\"], \"New Pin\", \"New Discription\", \"location_pin_medium.png\", \"location_pin.png\");\n\nSetGPSLockState(false);\n\nthis.view.MainMap.addPin(newPin);",
+            "codeSnippet": "SetGPSLockState(false);\n\nSetLattLong(location[\"lat\"], location[\"lon\"]);",
             "parentId": null,
             "callbackType": null
         }, {

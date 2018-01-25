@@ -4,9 +4,8 @@ define({
     */
     AS_Map_f741d57de330451ab2400b30ce4eedd3: function AS_Map_f741d57de330451ab2400b30ce4eedd3(eventobject, location) {
         var self = this;
-        var newPin = CreatePin("new pin", location["lat"], location["lon"], "New Pin", "New Discription", "location_pin_medium.png", "location_pin.png");
         SetGPSLockState(false);
-        this.view.MainMap.addPin(newPin);
+        SetLattLong(location["lat"], location["lon"]);
         var ntf = new kony.mvc.Navigation("PinEditForm");
         ntf.navigate();
     },
