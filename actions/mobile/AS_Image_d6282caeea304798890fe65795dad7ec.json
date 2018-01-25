@@ -84,7 +84,7 @@
         }, {
             "id": "ADD_SNIPPET__fc70232696f743909a4220f0b5bf4658",
             "type": "ADD_SNIPPET",
-            "codeSnippet": "GetLocationKey();",
+            "codeSnippet": "GetWeatherData();",
             "parentId": null,
             "callbackType": null
         }]

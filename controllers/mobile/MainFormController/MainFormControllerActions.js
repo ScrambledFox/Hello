@@ -61,7 +61,7 @@ define({
         }, {
             "animationEnd": MOVE_ACTION____c609f7caa0ec41ab930ad188d011c7e0_Callback
         });
-        GetLocationKey();
+        GetWeatherData();
     },
     AS_Image_ce3efd899d214a1788e56c6e75955bd1: function AS_Image_ce3efd899d214a1788e56c6e75955bd1(eventobject, x, y) {
         var self = this;
@@ -115,5 +115,9 @@ define({
         var self = this;
         var ntf = new kony.mvc.Navigation("LogForm");
         ntf.navigate();
+    },
+    AS_Image_ab05196516c348fc8699e149a72560f8: function AS_Image_ab05196516c348fc8699e149a72560f8(eventobject, x, y) {
+        var self = this;
+        GetWeatherData();
     }
 });

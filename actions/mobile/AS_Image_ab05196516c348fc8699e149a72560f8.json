@@ -1,0 +1,30 @@
+{
+    "AS_Image_ab05196516c348fc8699e149a72560f8": {
+        "id": "AS_Image_ab05196516c348fc8699e149a72560f8",
+        "type": "ACTION_SEQUENCE",
+        "params": [{
+            "datatype": "collection",
+            "name": "eventobject"
+        }, {
+            "datatype": "string",
+            "name": "x"
+        }, {
+            "datatype": "string",
+            "name": "y"
+        }],
+        "contextObj": {
+            "name": "MainForm",
+            "type": "forms",
+            "platform": "",
+            "KUID": "b47cb86f1efd4a0aab109b802ed1a973"
+        },
+        "language": "js",
+        "actions": [{
+            "id": "ADD_SNIPPET__cfa79974cd144f4086d0c20fe34a27aa",
+            "type": "ADD_SNIPPET",
+            "codeSnippet": "GetWeatherData();",
+            "parentId": null,
+            "callbackType": null
+        }]
+    }
+}

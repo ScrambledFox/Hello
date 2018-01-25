@@ -30,7 +30,8 @@
     "canUpdateUI": true,
     "children": [
         "MainMapFlex",
-        "MenuFlex"
+        "MenuFlex",
+        "Image0a4fe15f67c924e"
     ],
     "containerweight": 100,
     "controllerInfo": {
